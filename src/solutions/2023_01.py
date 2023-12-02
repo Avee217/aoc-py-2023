@@ -13,9 +13,9 @@ def part_1(lines):
             if x.isdigit():
                 part_a_digits.append(x)
                 part_b_digits.append(x)
-            for j,val in enumerate(["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]):
+            for j,val in enumerate(["zero","one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]):
                 if each[i:].startswith(val):
-                    part_b_digits.append(str(j+1))
+                    part_b_digits.append(str(j))
         part_a += int(part_a_digits[0]+part_a_digits[-1])
         #print(part_a)
         part_b += int(part_b_digits[0]+part_b_digits[-1])
